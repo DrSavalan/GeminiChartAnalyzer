@@ -8,10 +8,10 @@ import google.generativeai as genai
 import os
 
 # --- Configuration ---
-#api_key = "AIzaSyCIczRGZysir6YROTV7KbBka8nNWf0s4Rs" # Replace with your actual API key
 api_key = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=api_key)
-
+#api_key = "" # Replace with your actual API key; if you dont like the os.getenv method!
+#The Above API has expired and is shown for example
 # --- Image Loading and Captioning ---
 image_file_name = 'chart.png'
 mime_type = 'image/png'
