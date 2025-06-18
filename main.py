@@ -1,17 +1,17 @@
-# Before your other imports
 import os
 from dotenv import load_dotenv
-
-load_dotenv() # Load environment variables from .env file
-
+load_dotenv() # Load environment variables from .env file; for your safety!
 import google.generativeai as genai
 import os
 
 # --- Configuration ---
 api_key = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=api_key)
-#api_key = "" # Replace with your actual API key; if you dont like the os.getenv method!
-#The Above API has expired and is shown for example
+
+# Alternative method to assign your api key; instead of the .env and os.getenv method:
+#api_key = "sdjkkegnvkwosdwdwdjkjkks;wfv" # Replace with your actual API key
+#The Above API is not valid! and shown as an example!!!
+
 # --- Image Loading and Captioning ---
 image_file_name = 'chart.png'
 mime_type = 'image/png'
