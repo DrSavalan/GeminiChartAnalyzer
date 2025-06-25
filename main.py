@@ -15,6 +15,7 @@ genai.configure(api_key=api_key)
 # --- Image Loading and Captioning ---
 image_file_name = 'chart.png'
 mime_type = 'image/png'
+#Use your Content Below:
 website_content = """
 The article discusses 42 chart patterns used for effective intraday, swing, and F&O trading. Here's a summary of trading hints related to the patterns mentioned in the article:
 
